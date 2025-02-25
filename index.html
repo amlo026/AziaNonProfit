@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azia - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Titillium+Web&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="container">
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a id="home" href="index.html">Home</a>
+                <a id="about" href="about.html">About</a>
+                <a id="gallery" href="gallery.html">Gallery</a>
+                <a id="contact" href="contact.html">Contact</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+    <div class="heading">
+        <header id="ffc-logo">
+            <a href="index.html"><img src="images/android-chrome-512x512.png" alt="icon"></a>
+        </header>
+    <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop">
+            <h1 id="welcome">Welcome to Azia!</h1>
+            <ul>
+            <li><a id="home" href="index.html">Home</a></li>
+            <li><a id="about" href="about.html">About</a></li>
+            <li><a id="gallery" href="gallery.html">Gallery</a></li>
+            <li><a id="contact" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <!-- banner start -->
+        <div class="slider">
+
+            <div class="slides">
+                <input type="radio" name="rbutton" id="radio1">
+                <input type="radio" name="rbutton" id="radio2">
+                <div class="message1">Give<br>every<br>tail</div>
+                <div class="slide first">
+                    <img src="images/cat.png" alt="cat">
+                </div>
+                <div class="slide">
+                    <img src="images/dogcrop.png" alt="dog">
+                </div>
+                <div class="message2">a<br>happy<br>tale</div>
+            </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio'+ counter).checked = true;
+                counter++
+                if(counter>2){
+                    counter = 1;
+                }
+            }, 6500);
+        </script>
+        <!-- banner end -->
+        </div>
+        <div class="aboveContent">
+        <div class="webpages aboutContent">
+            <div class="aboutPage">
+                <a href="about.html"><img class="categoryImg" src="images/about.jpg" alt="about"></a>
+            </div>
+                <p class="aboutDesc">We're passionate about giving abandoned and neglected animals a second chance at life.
+                    Click to learn more about what our mission is and what we stand for.</p>
+            <div class="aboutImg">
+                <img class="contentImg" src="images/croppexels-cottonbro-6568489.jpg" alt='person with "volunteer shirt", hugging a dog'>
+            </div>
+        </div>
+<div id="mediaSection">
+    <h1>About Animals in Shelters</h1>
+        <div class="educate">
+            <div class="shelterVid">
+                <video controls>
+                    <source src="media/animalshelter.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="audioInfo">
+                <audio controls>
+                    <source src="media/shelter.mp3" type="audio/mp3">
+                </audio>
+            </div>
+                <div class="audioCap">
+                    <div id="dialogue" style="display: none;">
+                        Every year, millions of dogs and cats end up in animal shelters, waiting for a second chance at life. 
+                        These furry companions come in all shapes, sizes, and personalities. From playful puppies to wise old cats, each one has a unique story to tell. 
+                        Adopting a pet not only saves a life but also brings joy and companionship into your home. 
+
+                        Shelters are often filled with animals that have been abandoned or surrendered, and they’re just looking for love and a place to belong. 
+                        Many of these pets are already trained and socialized, making them perfect additions to any family. 
+                        Plus, adopting from a shelter is usually more affordable than buying from a breeder, and you’re helping to combat pet overpopulation. 
+
+                        So, if you’re considering adding a furry friend to your life, think about visiting your local shelter. 
+                        You might just find your new best friend waiting for you, ready to fill your days with love and laughter.
+                    </div>
+                    <button onclick="info()" id="readbtn">Show Audio Caption</button>
+                </div>
+        </div>
+    </div>
+        <div class="webpages gallerySection">
+            <div class="galleryImage">
+                <img id="galleryImg" class="contentImg" src="images/croppexels-shvetsa-4587971.jpg" alt="dog with free kisses sign">
+            </div>
+            <p class="galleryDesc">Explore heartwarming moments captured within our shelter.
+                Here we showcase the joy our animals bring.</p>
+            <div class="galleryPage">
+                <a href="gallery.html"><img class="categoryImg" src="images/gallery.jpg" alt="gallery"></a>
+            </div>
+        </div>
+    </div>
+        <div class="adoptables">
+            <h1>Adoptable Pets</h1>
+        <div class="grid" id="para">
+            <figure class="frame">
+                <img src="images/pexels-allen-1855741474-29288789.jpg" alt="White and brown calico cat"></a>
+                <figcaption class="pic-text">Mr.Whiskers</figcaption>
+            </figure>
+            <figure class="frame">
+                <img src="images/pexels-jane-thomson-1710934398-27939374.jpg" alt="Black and Brown Collie Aussie dog"></a>
+                <figcaption class="pic-text">Remy</figcaption>
+            </figure>
+            <figure class="frame">
+                <img src="images/pexels-cottonbro-6853506.jpg" alt="black cat"></a>
+                <figcaption class="pic-text">Luna</figcaption>
+            </figure>
+        </div>
+            <!-- Start of "Read More" -->
+            <div id="morepara" class="grid-content" style="display: none;">
+                <!-- row 2 -->
+                <figure class="frame">
+                    <img src="images/pexels-majkel-berger-1699317211-28038152.jpg" alt="Black and Tan Coonhound dog"></a>
+                    <figcaption class="pic-text">Finn</figcaption>
+                </figure>
+                <figure class="frame">
+                    <img src="images/pexels-mehmet-ali-kaya-193599468-19476420.jpg" alt="Grey British Shorthair cat"></a>
+                    <figcaption class="pic-text">Mochi</figcaption>
+                </figure>
+                <figure class="frame">
+                    <img src="images/pexels-noelace-11741009.jpg" alt="white and brown pitbull"></a>
+                    <figcaption class="pic-text">Clementine</figcaption>
+                </figure>
+                <!-- row 3 -->
+                <figure class="frame">
+                    <img src="images/pexels-jacp-4196193.jpg" alt="orange white black calico cat"></a>
+                    <figcaption class="pic-text">Autumn</figcaption>
+                </figure>
+                <figure class="frame">
+                    <img src="images/pexels-jason-reis-1986749370-28946856.jpg" alt="White Maltese dog"></a>
+                    <figcaption class="pic-text">Marshmellow</figcaption>
+                </figure>
+                <figure class="frame">
+                    <img src="images/pexels-cristiane-burckauser-544081737-16609367.jpg" alt="gray cat"></a>
+                    <figcaption class="pic-text">Stormy</figcaption>
+                </figure>
+                <!-- row 4 -->
+                <figure class="frame">
+                    <img src="images/pexels-miami302-26843460.jpg" alt="Brown American Bully dog"></a>
+                    <figcaption class="pic-text">Winston</figcaption>
+                </figure>
+                <figure class="frame">
+                    <img src="images/pexels-david-disponett-1118410-15500173.jpg" alt="siamese cat"></a>
+                    <figcaption class="pic-text">Sapphie</figcaption>
+                </figure>
+                <figure class="frame">
+                    <img src="images/pexels-luis-negron-260501657-16319914.jpg" alt="brown and white American Bully dog"></a>
+                    <figcaption class="pic-text">Benji</figcaption>
+                </figure>
+                <!-- last row -->
+                <figure class="frame">
+                    <img src="images/pexels-arina-krasnikova-7725628.jpg" alt="white cat"></a>
+                    <figcaption class="pic-text">Artemis</figcaption>
+                </figure>
+                <figure class="frame">
+                    <img src="images/pexels-rick-van-fessem-95407629-16272439.jpg" alt="gray pitbull"></a>
+                    <figcaption class="pic-text">Daisy</figcaption>
+                </figure>
+                <figure class="frame">
+                    <img src="images/pexels-bertoli-16255469.jpg" alt="gray tabby cat"></a>
+                    <figcaption class="pic-text">Bartholomew</figcaption>
+                </figure>
+            </div>
+                    <!-- End of "Read More" -->
+        <button onclick="para()" id="seemore">See More</button>
+        </div>
+        <div class="webpages contactSection">
+            <div class="contactPage">
+                <a href="contact.html"><img class="categoryImg" src="images/contact.jpg" alt="contact"></a>
+            </div>
+            <p class="contactDesc">Have any questions? Please feel free to reach out.
+                Contact us today to learn more or to schedule a visit!</p>
+            <div class="contactImg">
+                <img class="contentImg" src="images/croppexels-cottonbro-6568941.jpg" alt='dog with a "take me home" sign'>
+            </div>
+        </div>
+    </main>
+</div>
+    <footer>
+        <section id="footerInfo">
+            <div class="homeFooter">
+                <!-- See more info here to add transcript caption -->
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12096.931889508754!2d-74.0119276357255!3d40.71288759229218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fe30a7b447%3A0x8a0a55f0a5fd1f1f!2sPace%20University!5e0!3m2!1sen!2sus!4v1732919314092!5m2!1sen!2sus" 
+                        style="border:4px solid #d9a755;" allowfullscreen="" width="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="100%"></iframe>
+                    </div>
+                    <div class="socials">
+                        <a target = "youtube" href = "https://www.youtube.com/user/aspca"><i class="fa fa-youtube fa-3x"></i></a>
+                        <a target = "twitter" href= "https://x.com/PaceUniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" ><i class="fa fa-twitter fa-3x"></i></a>
+                        <a target = "facebook" href="https://www.facebook.com/paceuniversity"><i class="fa fa-facebook fa-3x"></i></a>
+                        <a target = "instagram" href="https://www.instagram.com/paceuniversity/?hl=en"><i class="fa fa-instagram fa-3x"></i></a>
+                    </div>
+                    <form id="subscribeInfo" onsubmit="return sentmsg(event)">
+                    <fieldset>
+                        <legend>More Information</legend>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+
+                        <input type="submit" id="subscribe" value="Subscribe">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <div id="footerLinks">
+            <a id="home" href="index.html">Home</a>
+            <a id="about" href="about.html">About</a>
+            <a id="gallery" href="gallery.html">Gallery</a>
+            <a id="contact" href="contact.html">Contact</a>
+            <p>&copy; Copyright 2024. All Rights Reserved. </p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

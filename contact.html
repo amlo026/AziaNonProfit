@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azia - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Titillium+Web&display=swap" rel="stylesheet">  
+    <script src="scripts/script.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id="aboutcontainer">
+<nav class="mobile-nav">
+    <div id="menu-links">
+        <a id="home" href="index.html">Home</a>
+        <a id="about" href="about.html">About</a>
+        <a id="gallery" href="gallery.html">Gallery</a>
+        <a id="contact" href="contact.html">Contact</a>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776;</div>
+    </a>
+</nav>
+    <!-- Use the header area for the website name or logo -->
+<div class="heading">
+<header id="ffc-logo">
+<a href="index.html"><img src="images/android-chrome-512x512.png" alt="icon"></a>
+</header>
+<!-- Tablet, Desktop Nav -->
+<nav class="tablet-desktop">
+<h1 id="welcome">Welcome to Azia!</h1>
+<ul>
+<li><a id="home" href="index.html">Home</a></li>
+<li><a id="about" href="about.html">About</a></li>
+<li><a id="gallery" href="gallery.html">Gallery</a></li>
+<li><a id="contact" href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+    <main id="contactContent">
+        <div id="cBanner"><img id="contactBanner" src="images/contactBanner.jpg" alt="Contact Banner"></div>
+        <br>
+        <center>
+            <form id="contactForm" onsubmit="return sentmsg(event)">
+            <br>
+            <h1>Contact Us</h1>
+            <h3>For any information regarding the rescues at our shelter or general questions</h3>
+            <h3>Please fill out the form below:</h3>
+            <label for="fName">First Name:</label>
+            <input type="text" name="fName" id="fName" placeholder="Enter your first name" required>
+
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName" placeholder="Enter your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="10" placeholder="Type your message here" required></textarea>
+
+            <input type="submit" id="submit" value ="Submit" class="btn">
+            
+            </form>
+    </center>
+	<br>
+    </main>
+    <footer id="footerLinks">
+        <a id="home" href="index.html">Home</a>
+        <a id="about" href="about.html">About</a>
+        <a id="gallery" href="gallery.html">Gallery</a>
+        <a id="contact" href="contact.html">Contact</a>
+	<p>&copy; Copyright 2024. All Rights Reserved. </p>
+</footer>
+    </div>
+</body>
+</html>
+
