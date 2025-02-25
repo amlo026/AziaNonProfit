@@ -1,4 +1,4 @@
-# AziaNonProfit
+# Azia Non-Profit Website
 
 Team of 4 CIS102W (Web Design for Non-profit Organization) - Final Project
 
